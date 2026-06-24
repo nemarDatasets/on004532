@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004532-blue)](https://doi.org/10.82901/nemar.on004532)
+
 Probabilistic Selection Task.  Unpublished!   Same sample as this published study: 10.1038/ncomms6394.  
 
 Study 1: 80 healthy participants + 5 placebo session from a pilot of the drug study.  Total n=85.   But Subj 173 might have bad EEG.   
