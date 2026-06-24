@@ -1,28 +1,100 @@
 {
   "version": "2.0",
-  "dataset_id": "on004532",
-  "source": "openneuro",
-  "source_id": "ds004532",
+  "pipeline_stage": "enriched",
   "title": "EEG: Probabilistic Selection Task (PST) + PST with Cabergoline Challenge",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "James F Cavanagh": {},
     "Michael J Frank": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004532.v1.2.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004532",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004532",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/ncomms5394",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/ncomms6394",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.1.1",
-  "recording_modality": [
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".bmp",
+    ".db",
+    ".eeg",
+    ".fdt",
+    ".jpg",
+    ".json",
+    ".m",
+    ".mat",
+    ".md",
+    ".set",
+    ".tsv",
+    ".txt",
+    ".vhdr",
+    ".vmrk",
+    ".xlsx"
+  ],
+  "description": "EEG dataset from a probabilistic selection task (PST) study comprising two cohorts: Study 1 with 85 healthy participants (80 baseline + 5 placebo pilot sessions) and Study 2 with 30 healthy participants (27 analyzed after 3 dropouts) in a double-blind, placebo-controlled design testing cabergoline (1.25 mg) effects on decision-making and reward processing. Data were collected circa 2012-2013 and include behavioral task performance alongside continuous EEG recordings. The dataset itself is unpublished; however, Study 1 data come from the same sample as the published study (10.1038/ncomms6394). Note: Subject 173 may have data quality issues; feedback labels in event files show 'FB: 0' and 'FB: +1' but actual task feedback was 'Correct!' or 'Incorrect!' Historical note: The original task was mislabeled as 'Simon Conflict' in some documentation; this is a Probabilistic Selection Task (PST).",
+  "methods_description": "EEG data were collected during a probabilistic selection task programmed in Matlab at the Laboratory for Neural Computation & Cognition at Brown University. Study 1 involved 85 participants (80 healthy controls plus 5 placebo pilot sessions). Study 2 employed a double-blind, placebo-controlled design with 30 healthy participants enrolled (27 completed both sessions), with cabergoline (1.25 mg) or placebo administered between sessions. Task stimuli and feedback are documented in the stimuli folder. Original subject IDs were recoded to BIDS format: Study 1 subjects 101-180 plus pilot subjects 301/401 and 305/405; Study 2 subjects originally coded with session prefix (300s for session 1, 400s for session 2) with last two digits as subject identifier.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "decision-making"
+    },
+    {
+      "term": "reward processing"
+    },
+    {
+      "term": "probabilistic learning"
+    },
+    {
+      "term": "cabergoline"
+    },
+    {
+      "term": "dopamine"
+    },
+    {
+      "term": "event-related potentials"
+    },
+    {
+      "term": "feedback-related negativity"
+    },
+    {
+      "term": "probabilistic selection task"
+    },
+    {
+      "term": "placebo-controlled"
+    },
+    {
+      "term": "pharmacological intervention"
+    }
+  ],
+  "source_hash": "85c2b99c6f6237eb79b610857af4c93c316e306eef090ecd1131bb2a8499f6c2"
 }
