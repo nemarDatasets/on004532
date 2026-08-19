@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "EEG: Probabilistic Selection Task (PST) + PST with Cabergoline Challenge",
-  "description": "This dataset comprises EEG recordings from two studies using a Probabilistic Selection Task (PST): Study 1 includes 85 participants (80 healthy controls plus 5 pilot placebo sessions), and Study 2 includes 27 healthy participants (after 3 dropouts from initial 30) in a double-blind design receiving either Cabergoline 1.25 mg or placebo. The dataset was collected circa 2012-2013 at Brown University's Laboratory for Neural Computation & Cognition and provides neurophysiological measures of decision-making and reward processing during probabilistic learning. NOTE: This dataset is unpublished; however, the same sample was used in the published study (10.1038/ncomms6394). Known issues: Subject 173 may have poor EEG data quality. Event file feedback labels ('FB: 0' and 'FB: +1') do not match actual task feedback ('Correct!' or 'Incorrect!'); see stimuli folder for accurate feedback labels. Original task description contained mislabeling as 'Simon Conflict' task; this is a Probabilistic Selection Task (PST).",
-  "methods_description": "EEG data were collected during a Probabilistic Selection Task implemented in Matlab. Study 1 involved 85 participants in a single session, while Study 2 employed a double-blind, within-subject design with 27 participants across two sessions (baseline and drug/placebo challenge with Cabergoline 1.25 mg). Task stimuli and feedback ('Correct!' or 'Incorrect!') are documented in the stimuli folder. Note: Event file feedback labels use 'FB: 0' and 'FB: +1' notation rather than the actual feedback text presented to participants.",
+  "description": "This dataset comprises EEG recordings from two studies using the Probabilistic Selection Task (PST) with healthy participants. Study 1 included 85 participants (80 main plus 5 placebo pilot sessions), while Study 2 was a double-blind, placebo-controlled trial testing the effects of the dopamine agonist Cabergoline (1.25 mg) on task performance in 27 participants across two sessions. The data were collected circa 2012-2013 at the Laboratory for Neural Computation & Cognition at Brown University and are related to a published study examining cognitive control and reward learning.",
+  "methods_description": "EEG data were collected while participants performed a Probabilistic Selection Task, implemented in MATLAB. In Study 2, a double-blind design was used to assess the effects of Cabergoline (1.25 mg) versus placebo across two sessions per participant.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -15,25 +15,19 @@
       "term": "EEG"
     },
     {
-      "term": "decision making"
+      "term": "Probabilistic Selection Task"
     },
     {
-      "term": "reward processing"
+      "term": "Cabergoline"
     },
     {
-      "term": "probabilistic learning"
+      "term": "reward learning"
     },
     {
-      "term": "reinforcement learning"
+      "term": "dopamine agonist"
     },
     {
-      "term": "cabergoline"
-    },
-    {
-      "term": "dopamine"
-    },
-    {
-      "term": "pharmacological challenge"
+      "term": "cognitive control"
     }
   ],
   "related_identifiers": [
@@ -43,24 +37,19 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004532",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1038/ncomms5394",
-      "identifier_type": "DOI",
-      "relation_type": "References"
-    },
-    {
       "identifier": "10.1038/ncomms6394",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.18112/openneuro.ds004532.v1.2.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004532",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_specific": "EEG Dataset",
